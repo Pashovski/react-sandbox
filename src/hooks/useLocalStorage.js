@@ -15,7 +15,7 @@ function useLocalStorage(key, initialValue) {
     localStorage.setItem(key, JSON.stringify(valueToStore))
   }
 
-  return [localStorage, setValue]
+  return [localStorageValue, setValue]
 }
 
 function getLocalStorageValue(key, initialValue) {

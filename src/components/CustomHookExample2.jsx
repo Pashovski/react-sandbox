@@ -32,6 +32,11 @@ function CustomHookExample2() {
           Submit
         </button>
       </form>
+
+      <hr />
+      {tasks.map((task) => (
+        <h3 key={task.date}>{task.task}</h3>
+      ))}
     </>
   )
 }
